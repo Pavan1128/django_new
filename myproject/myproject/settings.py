@@ -50,6 +50,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+    # 'basic.middleware.basicMiddleware',
+    # 'basic.middleware.SscMiddleware',
+    # 'basic.middleware.MedicalfitMiddleware',
+    # 'basic.middleware.AgeMiddleware',
+    # 'basic.middleware.UserMiddleware',
+    # 'basic.middleware.emailMiddleware',
+    # 'basic.middleware.passwordMiddleware',
+    'basic.middleware.token_Middleware'
 ]
 
 ROOT_URLCONF = 'myproject.urls'

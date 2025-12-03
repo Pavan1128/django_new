@@ -17,7 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from basic.views import sample
-from basic.views import health,addstudent,get_all_records,get_student_by_id,get_students_age_20_plus
+from basic.views import health,addstudent,get_all_records,get_student_by_id,get_students_age_20_plus,job1,job2,signUp
+from basic.views import reviews,receive,update,delete,get_movies_by_budget,get_rating_five,hash,login,changepassword
+from basic.views import getdata
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,5 +29,20 @@ urlpatterns = [
     path('student/',addstudent),
     path('get_all/',get_all_records),
     path('get_id/<int:id>/',get_student_by_id),
-    path("get>20/",get_students_age_20_plus)
+    path("get20/",get_students_age_20_plus),
+    path('job1/',job1),
+    path('job2/',job2),
+    path('signUp/',signUp),
+    path('reviews/',reviews),
+    path('receive/',receive),
+    path('update/',update),
+    path('delete/',delete),
+    path('budget/',get_movies_by_budget),
+    path("rating/",get_rating_five),
+    path("hash/",hash),
+    path('login/',login),
+    path('changepassword/',changepassword),
+    path('users/',getdata)
+    
+    
 ]
